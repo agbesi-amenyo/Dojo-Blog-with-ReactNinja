@@ -33,7 +33,7 @@ useEffect(()=>{
 
     return ( 
         <div className="home">
-            {error && <div>{error}</div>}
+        {error && <div>{error}</div>}
         {isLoading && <div>Loding...</div>}
          {blogs && <BlogList blogs ={blogs}  title ="All Blogs!"  handleDelete={handleDelete}/>}
          {/* <BlogList blogs ={blogs.filter((blog) =>  blog.author === "mario")}  title ="Mario's Blogs"  handleDelete={handleDelete}/> */}
